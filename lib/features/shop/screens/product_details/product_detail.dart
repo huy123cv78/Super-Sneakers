@@ -62,15 +62,15 @@ class ProductDetailScreen extends StatelessWidget {
                 // description
 
                 // reviews
-                const Divider(),
-                const SizedBox(height: HSizes.spaceBtwItems),
-                Row(
-                  mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                  children: [
-                    const HSectionHeading(title: 'Reviews(199)',showActionButton: false),
-                    IconButton(icon: const Icon(Iconsax.arrow_right_3,size: 18),onPressed: () => Get.to(()=>const ProductReviewScreen())),
-                  ],
-                ),
+                // const Divider(),
+                // const SizedBox(height: HSizes.spaceBtwItems),
+                // Row(
+                //   mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                //   children: [
+                //     const HSectionHeading(title: 'Reviews(199)',showActionButton: false),
+                //     IconButton(icon: const Icon(Iconsax.arrow_right_3,size: 18),onPressed: () => Get.to(()=>const ProductReviewScreen())),
+                //   ],
+                // ),
           
               ],
             ),

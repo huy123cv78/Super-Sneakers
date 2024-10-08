@@ -19,7 +19,7 @@ class HHomeCategories extends StatelessWidget {
        scrollDirection: Axis.horizontal,
        itemBuilder: (_, index) {
          
-        return  HVerticallmageText(image: HImages.shoeIcon,title: 'shoes',onTap: () => Get.to(()=>const SubCategoriesScreen()));
+        return  HVerticallmageText(image: HImages.shoeIcon,title: 'Giày',onTap: () => Get.to(()=>const SubCategoriesScreen()));
        },
        ),
     );

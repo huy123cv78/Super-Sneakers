@@ -25,7 +25,7 @@ class SettingsScreen extends StatelessWidget {
             // header
               HPrimaryHeaderContainer(
                 child: Column(
-                children: [HAppBar(title: Text('accout',style: Theme.of(context).textTheme.headlineMedium!.apply(color: HColors.white))),
+                children: [HAppBar(title: Text('Tài khoản',style: Theme.of(context).textTheme.headlineMedium!.apply(color: HColors.white))),
 
                 //user profiled card //HUserProfileTile
                   HUserProfileTile(onPressed: () => Get.to(()=> const ProfileScreen())),
@@ -39,55 +39,62 @@ class SettingsScreen extends StatelessWidget {
               child: Column(
                 children: [
                   // account setting
-                  const HSectionHeading(title: 'account setting',showActionButton: false),
+                  const HSectionHeading(title: 'Thông tin tài khoảng',showActionButton: false),
                   const SizedBox(height: HSizes.spaceBtwItems),
 
                    HSettingsMenuTile(
                     icon: Iconsax.safe_home, 
-                    title: 'my address', 
-                    subTitle: 'set shopping delivery address',
+                    title: 'Địa chỉ', 
+                    subTitle: 'Thiết lập địa chỉ',
                     onTap: () => Get.to(()=>const UserAddressScreen()),
                     ),// co the them onTap: (){} de tuong tac
-                  const HSettingsMenuTile(icon: Iconsax.shopping_cart, title: 'my cart', subTitle: 'add, remove products and move to checkout'),
-                   HSettingsMenuTile(icon: Iconsax.bag_tick, title: 'my orders', subTitle: 'In-progress and completed orders',onTap: () => Get.to(()=>const OrderScreen())),
-                  const HSettingsMenuTile(icon: Iconsax.bank, title: 'bank account', subTitle: 'withdraw balance to registered bank account'),
-                  const HSettingsMenuTile(icon: Iconsax.discount_shape, title: 'my coupons', subTitle: 'list of all discounted coupons'),
-                  const HSettingsMenuTile(icon: Iconsax.notification, title: 'Notification', subTitle: 'set any kind of notification message'),
-                  const HSettingsMenuTile(icon: Iconsax.security_card, title: 'account privacy', subTitle: 'Manage data usage and connected accounts'),
+                  //const HSettingsMenuTile(icon: Iconsax.shopping_cart, title: 'my cart', subTitle: 'add, remove products and move to checkout'),
+                   HSettingsMenuTile(icon: Iconsax.bag_tick, title: 'Lịch sử thanh toán', subTitle: 'Đơn đặt hàng đang tiến hành và đã hoàn thành',onTap: () => Get.to(()=>const OrderScreen())),
+                  const HSettingsMenuTile(icon: Iconsax.bank, title: 'Tài khoản ngân hàng', subTitle: 'Rút số dư về tài khoản ngân hàng đã đăng ký'),
+                  const HSettingsMenuTile(icon: Iconsax.discount_shape, title: 'Phiếu giảm giá của tôis', subTitle: 'Danh sách tất cả các phiếu giảm giá'),
+                  const HSettingsMenuTile(icon: Iconsax.notification, title: 'Thông báo', subTitle: 'Đặt bất kỳ loại tin nhắn thông báo nào'),
+                  const HSettingsMenuTile(icon: Iconsax.security_card, title: 'Quyền riêng tư tài khoản', subTitle: 'Quản lý việc sử dụng dữ liệu và các tài khoản được kết nối'),
 
                   //app setting
-                  const SizedBox(height: HSizes.spaceBtwSections),
-                  const HSectionHeading(title: 'app setting',showActionButton: false),
-                  const SizedBox(height: HSizes.spaceBtwItems),
-                  const HSettingsMenuTile(icon: Iconsax.document_upload, title: 'load data', subTitle: 'up load data'),
-                  HSettingsMenuTile(
-                    icon: Iconsax.location, 
-                    title: 'geolocation', 
-                    subTitle: 'set recommendation based on location',
-                    trailing: Switch(value: true, onChanged: (value) {}),// chu true o day la bat cong tat
-                    ),
+                  // const SizedBox(height: HSizes.spaceBtwSections),
+                  // const HSectionHeading(title: 'app setting',showActionButton: false),
+                  // const SizedBox(height: HSizes.spaceBtwItems),
+                  // const HSettingsMenuTile(icon: Iconsax.document_upload, title: 'load data', subTitle: 'up load data'),
+                  // HSettingsMenuTile(
+                  //   icon: Iconsax.location, 
+                  //   title: 'geolocation', 
+                  //   subTitle: 'set recommendation based on location',
+                  //   trailing: Switch(value: true, onChanged: (value) {}),// chu true o day la bat cong tat
+                  //   ),
 
-                     HSettingsMenuTile(
-                    icon: Iconsax.security_user, 
-                    title: 'safe mode', 
-                    subTitle: 'search result is safe for all ages',
-                    trailing: Switch(value: false, onChanged: (value) {}),
-                    ),
+                  //    HSettingsMenuTile(
+                  //   icon: Iconsax.security_user, 
+                  //   title: 'safe mode', 
+                  //   subTitle: 'search result is safe for all ages',
+                  //   trailing: Switch(value: false, onChanged: (value) {}),
+                  //   ),
 
-                     HSettingsMenuTile(
-                    icon: Iconsax.image, 
-                    title: 'HD Image Quality', 
-                    subTitle: 'set image quality to be seen',
-                    trailing: Switch(value: false, onChanged: (value) {}),
-                    ),
+                  //    HSettingsMenuTile(
+                  //   icon: Iconsax.image, 
+                  //   title: 'HD Image Quality', 
+                  //   subTitle: 'set image quality to be seen',
+                  //   trailing: Switch(value: false, onChanged: (value) {}),
+                  //   ),
                   
                   // logout button
                   const SizedBox(height: HSizes.spaceBtwSections),
                   SizedBox(
                     width: double.infinity,
-                    child: OutlinedButton(onPressed: () => Get.to(() => const LoginScreen()),child: const Text('Dang xuat')),
+                    child: OutlinedButton(
+                      onPressed: () => Get.to(() => const LoginScreen()),
+                      style: ButtonStyle( backgroundColor: MaterialStateProperty.all<Color>(HColors.primary),
+                      side: MaterialStateProperty.all<BorderSide>(
+                       const BorderSide(color: Colors.white), // Màu của border
+                       ),
+                       ),
+                      child: const Text('Đăng xuất',style: TextStyle(color: HColors.white))),
                   ),
-                  const SizedBox(height: HSizes.spaceBtwSections * 2.5),
+                  // const SizedBox(height: HSizes.spaceBtwSections * 2.5),
                 ],
               ),
               ),

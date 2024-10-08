@@ -76,6 +76,7 @@ class CartScreen extends StatelessWidget {
               style: ElevatedButton.styleFrom(
                 backgroundColor: HColors.primary, // Màu nền của nút
                 minimumSize: const Size(double.infinity, 36), // Chiều rộng tối đa và chiều cao cố định
+                side: const BorderSide(color: Colors.white),
               ),
               child: const Text('THANH TOÁN'),
             ),

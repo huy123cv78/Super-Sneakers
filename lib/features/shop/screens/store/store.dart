@@ -25,7 +25,7 @@ class StoreScreen extends StatelessWidget {
 
       //appbar
         appBar: HAppBar(
-          title: Text('Store',style: Theme.of(context).textTheme.headlineMedium),
+          title: Text('Cửa hàng',style: Theme.of(context).textTheme.headlineMedium),
           actions: [
             HCartCounterIcon(onPressed: () {}, iconColor: HColors.black),// khuc nay co che them 
           ],

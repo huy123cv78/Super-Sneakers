@@ -1,4 +1,5 @@
 import 'package:appbangiay/common/styles/spacing_styles.dart';
+import 'package:appbangiay/utils/constants/colors.dart';
 import 'package:appbangiay/utils/constants/sizes.dart';
 import 'package:appbangiay/utils/constants/text_strings.dart';
 import 'package:appbangiay/utils/helpers/helper_functions.dart';
@@ -29,7 +30,15 @@ final VoidCallback onPressed;
               const SizedBox(height:HSizes.spaceBtwSections),
 
               //buttons
-              SizedBox(width: double.infinity,child: ElevatedButton(onPressed: onPressed,child: const Text(HTexts.tContinue))),
+              SizedBox(width: double.infinity,child: ElevatedButton(
+                onPressed: onPressed,
+                style: ButtonStyle( backgroundColor: MaterialStateProperty.all<Color>(HColors.primary),
+                 side: MaterialStateProperty.all<BorderSide>(
+                const BorderSide(color: Colors.white), // Màu của border
+               ),
+                ),
+                child: const Text(HTexts.tContinue),
+                )),
             ],
           ),
         ),

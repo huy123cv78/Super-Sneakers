@@ -10,7 +10,7 @@ class OrderScreen extends StatelessWidget {
   Widget build(BuildContext context) {
     return  Scaffold(
       //appbar
-      appBar: HAppBar(title: Text('my order',style: Theme.of(context).textTheme.headlineSmall),showBackArrow: true),
+      appBar: HAppBar(title: Text('Lịch sử đơn hàng',style: Theme.of(context).textTheme.headlineSmall),showBackArrow: true),
       body: const Padding(
         padding: EdgeInsets.all(HSizes.defaultSpace),
 

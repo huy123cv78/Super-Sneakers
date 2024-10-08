@@ -25,7 +25,7 @@ class HCouponCode extends StatelessWidget {
           Flexible(
             child: TextFormField(
               decoration: const InputDecoration(
-                hintText: 'Nhập mã khuyến mãi của bạn',
+                hintText: 'Nh\u1EADp m\u00E3 khuy\u1EBFn m\u00E3i c\u1EE7a b\u1EA1n',
                 border: InputBorder.none,
                 focusedBorder: InputBorder.none,
                 enabledBorder: InputBorder.none,

@@ -16,7 +16,7 @@ class HLoginHeader extends StatelessWidget {
     return Column(
       crossAxisAlignment: CrossAxisAlignment.center,
       children: [
-        Image(
+        const Image(
           height: 200,
           width: 400,
           image: AssetImage( HImages.logo2),

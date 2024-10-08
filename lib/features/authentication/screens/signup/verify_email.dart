@@ -1,5 +1,6 @@
 import 'package:appbangiay/common/widgets/success_screen/success_screen.dart';
 import 'package:appbangiay/features/authentication/screens/login/login.dart';
+import 'package:appbangiay/utils/constants/colors.dart';
 import 'package:appbangiay/utils/constants/image_strings.dart';
 import 'package:appbangiay/utils/constants/sizes.dart';
 import 'package:appbangiay/utils/constants/text_strings.dart';
@@ -50,7 +51,13 @@ class VerifyEmailScreen extends StatelessWidget {
                   onPressed: () =>Get.to(()=>const LoginScreen()),
                 ),
               ),
-            child: const Text(HTexts.tContinue)),
+            style: ButtonStyle( backgroundColor: MaterialStateProperty.all<Color>(HColors.primary),
+            side: MaterialStateProperty.all<BorderSide>(
+        const BorderSide(color: Colors.white), // Màu của border
+      ),
+            ),
+            child: const Text(HTexts.tContinue),
+            ),
                 ),
               const SizedBox(height:HSizes.spaceBtwItems),
               SizedBox(width: double.infinity,child: TextButton(onPressed: (){},child: const Text(HTexts.resendEmail))),

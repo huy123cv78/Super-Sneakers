@@ -21,7 +21,7 @@ class UserAddressScreen extends StatelessWidget {
         ),
         appBar: HAppBar(
           showBackArrow: true,
-          title: Text('address',style: Theme.of(context).textTheme.headlineSmall),
+          title: Text('Địa chỉ',style: Theme.of(context).textTheme.headlineSmall),
         ),
         body: const SingleChildScrollView(
           child: Padding(

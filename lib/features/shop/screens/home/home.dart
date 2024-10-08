@@ -30,7 +30,7 @@ class HomeScreen extends StatelessWidget {
                     SizedBox(height: HSizes.spaceBtwSections),
 
                   // searchbar tim kiem HSearchContainer
-                    HSearchContainer(text: 'search in store'),
+                    HSearchContainer(text: 'Tìm kiếm'),
                     SizedBox(height: HSizes.spaceBtwSections), 
 
                   // categories 
@@ -39,7 +39,7 @@ class HomeScreen extends StatelessWidget {
                     children: [
                       
                       //heading
-                        HSectionHeading(title: 'Popular Categories',showActionButton: false,textColor: Colors.white),
+                        HSectionHeading(title: 'Loại hãng giày',showActionButton: false,textColor: Colors.white),
                         SizedBox(height: HSizes.spaceBtwItems), 
 
                        //categories 
@@ -63,7 +63,7 @@ class HomeScreen extends StatelessWidget {
                   const SizedBox(height: HSizes.spaceBtwSections),
 
                   /// heading
-                   HSectionHeading(title: 'Popular products',onPressed: () => Get.to(() =>const AllProducts())),
+                   HSectionHeading(title: 'Các sản phẩm nổi bật',onPressed: () => Get.to(() =>const AllProducts())),
                   const SizedBox(height: HSizes.spaceBtwItems),
 
                   //popular products

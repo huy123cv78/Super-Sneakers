@@ -14,14 +14,14 @@ class AllBrandsScreen extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return  Scaffold(
-      appBar: const HAppBar(title: Text('Brands'),showBackArrow: true),
+      appBar: const HAppBar(title: Text('Hãng giày'),showBackArrow: true),
       body: SingleChildScrollView(
         child: Padding(
           padding: const EdgeInsets.all(HSizes.defaultSpace),
           child: Column(
             children: [
               //heading
-              const HSectionHeading(title: 'Brands',showActionButton: false),
+              const HSectionHeading(title: 'Hãng giày',showActionButton: false),
               const SizedBox(height: HSizes.spaceBtwItems),
 
               //brans

@@ -18,7 +18,8 @@ class OnBoardingDotNavigation extends StatelessWidget {
     final dark= HHelperFunctions.isDarkMode(context);
 
     return Positioned(
-      bottom: HDeviceUtils.getBottomNavigationBarHeight() + 25,
+      // bottom: HDeviceUtils.getBottomNavigationBarHeight() + 25,
+      bottom: 10,
       left: HSizes.spaceBtwSections * 4.5,
       child: SmoothPageIndicator(
         controller: controller.pageController,

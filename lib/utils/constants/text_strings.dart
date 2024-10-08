@@ -5,7 +5,7 @@ static const String skip = "Skip";
 static const String done = "Done";
 static const String submit = "Submit";
 static const String appName = "T-Store";//kiếm lại tên nhóm
-static const String tContinue = "Continue";
+static const String tContinue = "Tiếp tục";
 //onboarding texts
 static const String onBoardingTitle1="Lựa chọn phù hợp";
 static const String onBoardingTitle2="Phương thức thanh toán";
@@ -24,7 +24,7 @@ static const String onBoardingSubTitle3="Giao đúng lúc, đúng chỗ!";
   static const String password2 = "Nhập lại mật khẩu";
   static const String newPassword = "Mật khẩu mới";
   static const String username = "Tên tài khoản";
-  static const String phoneNo = "Nhật số điện thoại";
+  static const String phoneNo = "Nhập số điện thoại";
   static const String rememberMe = "Lưu tài khoản";
   static const String forgetPassword = "Quên mật khẩu?";
   static const String signIn = "Đăng nhập";
@@ -32,14 +32,14 @@ static const String onBoardingSubTitle3="Giao đúng lúc, đúng chỗ!";
   static const String orSignInWith = "Hoặc đăng nhập bằng";
   static const String orSignUpWith = "Hoặc đăng ký bằng";
   static const String iAgreeTo = "Tôi đồng ý";
-  static const String privacyPolicy = "Chính sách riêng tư";
+  static const String privacyPolicy = "Chính sách";
   static const String termsOfUse = "Điều khoản";
   static const String verificationCode = "Mã xác minh";
   static const String resendEmail = "Gửi lại email";
   static const String resendEmailIn = "Gửi lại trong Email";
 
 //home
-static const String homeAppbarTitle="good day for shopping";
+static const String homeAppbarTitle="Chào một ngày mới";
 static const String homeAppbarSubTitle="huy pham";
 
 // -- Product

@@ -13,7 +13,7 @@ class ProfileScreen extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return  Scaffold(
-      appBar: const HAppBar(showBackArrow: true,title: Text('Profile')),
+      appBar: const HAppBar(showBackArrow: true,title: Text('Thông tin')),
       //body
       body: SingleChildScrollView(
       child:Padding(

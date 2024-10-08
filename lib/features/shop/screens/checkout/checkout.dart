@@ -98,8 +98,8 @@ Widget build(BuildContext context) {
         onPressed: () => Get.to(
           () => SuccessScreen(
             image: HImages.successfulPaymentIcon,
-            title: 'Payment success!',
-            subTitle: 'Your item will be shipped soon',
+            title: 'Thanh toán thành công!',
+            subTitle: 'giao hàng nhanh chống',
             
             onPressed: () => Get.offAll(() => const NavigationMenu()),
             
@@ -108,7 +108,8 @@ Widget build(BuildContext context) {
         ),
           style: ElevatedButton.styleFrom(
     backgroundColor: HColors.primary, 
-     minimumSize: Size(double.infinity, 36), //// Đặt màu nền của nút thành màu cam
+     minimumSize: const Size(double.infinity, 36), //// Đặt màu nền của nút thành màu cam
+     side: const BorderSide(color: Colors.white),
  
     ),
         child: const Text('Thanh toán'),

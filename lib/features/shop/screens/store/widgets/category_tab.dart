@@ -20,8 +20,8 @@ class HCategoryTab extends StatelessWidget {
               child: Column(
                 children: [
                   //brands //HBrandShowcase
-                  const HBrandShowcase(images: [HImages.productImage3,HImages.productImage4,HImages.productImage5]),
-                  const HBrandShowcase(images: [HImages.productImage3,HImages.productImage4,HImages.productImage5]),
+                  const HBrandShowcase(images: [HImages.productImage7,HImages.productImage7,HImages.productImage7]),
+                  const HBrandShowcase(images: [HImages.productImage7,HImages.productImage7,HImages.productImage7]),
                   const SizedBox(height: HSizes.spaceBtwItems),
       
                   //products

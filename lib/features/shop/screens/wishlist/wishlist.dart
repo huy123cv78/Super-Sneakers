@@ -15,7 +15,7 @@ class FavouriteScreen extends StatelessWidget {
   Widget build(BuildContext context) {
     return  Scaffold(
       appBar: HAppBar(
-        title: Text('wishlist',style: Theme.of(context).textTheme.headlineMedium),
+        title: Text('Yêu thích',style: Theme.of(context).textTheme.headlineMedium),
         actions: [
           HCircularIcon(icon: Iconsax.add,onPressed: ()=>Get.to(const HomeScreen())),
         ],
